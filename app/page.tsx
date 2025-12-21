@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 export default function HomePage() {
   return (
     <div className="relative w-full h-[85vh] flex items-center justify-center text-center">
@@ -39,45 +38,3 @@ export default function HomePage() {
     </div>
   );
 }
-=======
-export default function HomePage() {
-  return (
-    <div className="relative w-full h-[85vh] flex items-center justify-center text-center">
-
-      <img
-        src="/home-bg.jpg"
-        alt="Background"
-        className="absolute inset-0 w-full h-full object-contain md:object-cover"
-      />
-
-      <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-black/10"></div>
-
-      <div className="relative z-10 text-white px-4">
-        <h1 className="text-4xl md:text-6xl font-bold leading-tight">
-          Professional Commercial Cleaning<br />Services in New Zealand
-        </h1>
-
-        <p className="mt-4 text-lg md:text-xl text-gray-200">
-          Quality Cleaning for a Safer, Healthier Workplace.
-        </p>
-
-        <div className="mt-8 flex gap-4 justify-center flex-wrap">
-          <a
-            href="/quote"
-            className="px-6 py-3 bg-blue-600 rounded-lg text-white font-semibold hover:bg-blue-700"
-          >
-            Get a Free Quote
-          </a>
-
-          <a
-            href="/services"
-            className="px-6 py-3 bg-white text-gray-900 rounded-lg font-semibold hover:bg-gray-200"
-          >
-            View Services
-          </a>
-        </div>
-      </div>
-    </div>
-  );
-}
->>>>>>> 3478cf3aeb027c6feae38b35a5c56add7c77cca4
