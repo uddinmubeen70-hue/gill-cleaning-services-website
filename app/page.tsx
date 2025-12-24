@@ -1,16 +1,16 @@
 export default function HomePage() {
   return (
-    <div className="relative w-full min-h-screen flex items-center justify-center text-center overflow-hidden">
+    <div className="relative w-full min-h-[85vh] md:min-h-screen flex items-center justify-center text-center overflow-hidden">
 
       <img
         src="/home-bg.jpg"
         alt="Background"
-        className="absolute inset-0 w-full h-full object-cover"
+        className="absolute inset-0 w-full h-full object-cover object-center"
       />
 
       <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-black/20"></div>
 
-      <div className="relative z-10 text-white px-4 max-w-4xl pt-16 md:pt-0">
+      <div className="relative z-10 text-white px-4 max-w-4xl pt-12 md:pt-0">
         <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold leading-tight">
           Professional Commercial Cleaning<br />Services in New Zealand
         </h1>
