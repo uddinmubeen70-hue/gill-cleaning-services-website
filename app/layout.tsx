@@ -11,12 +11,7 @@ export default function RootLayout({
     <html lang="en">
       <body className="bg-white">
         <Header />
-
-        {/* Header height compensation */}
-        <main className="pt-16">
-          {children}
-        </main>
-
+        {children}
         <Footer />
       </body>
     </html>
