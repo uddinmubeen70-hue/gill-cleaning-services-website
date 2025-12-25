@@ -1,7 +1,14 @@
 export default function HomePage() {
   return (
-    <section className="relative w-full h-[100svh] flex items-center justify-center text-center overflow-hidden">
-
+    <section
+      className="
+        relative w-full
+        h-[calc(100vh-64px)]
+        flex items-center justify-center
+        text-center
+        overflow-hidden
+      "
+    >
       {/* BACKGROUND IMAGE */}
       <picture className="absolute inset-0 w-full h-full">
         <source media="(max-width:768px)" srcSet="/home-bg-mobile.jpg" />
@@ -18,12 +25,11 @@ export default function HomePage() {
       {/* CONTENT */}
       <div className="relative z-10 text-white px-4 max-w-4xl">
         <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold leading-tight">
-          Professional Commercial Cleaning
-          <br />
+          Professional Commercial Cleaning <br />
           Services in New Zealand
         </h1>
 
-        <p className="mt-4 text-base sm:text-lg md:text-xl text-gray-200">
+        <p className="mt-4 text-lg text-gray-200">
           Quality Cleaning for a Safer, Healthier Workplace.
         </p>
 

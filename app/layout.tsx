@@ -11,7 +11,7 @@ export default function RootLayout({
       <body className="bg-white">
         <Header />
 
-        {/* HEADER HEIGHT = h-16 (64px) */}
+        {/* Header height = 64px */}
         <main className="pt-16">
           {children}
         </main>
