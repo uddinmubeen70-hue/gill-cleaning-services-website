@@ -1,7 +1,13 @@
 export default function HomePage() {
   return (
-    <section className="relative w-full h-screen flex items-center justify-center text-center overflow-hidden">
-
+    <section
+      className="
+        relative w-full
+        h-[calc(100vh-4rem)]
+        flex items-center justify-center
+        text-center overflow-hidden
+      "
+    >
       {/* RESPONSIVE IMAGE */}
       <picture className="absolute inset-0 w-full h-full">
         <source media="(max-width: 768px)" srcSet="/home-bg-mobile.jpg" />
