@@ -1,20 +1,10 @@
 export default function HomePage() {
   return (
-    <section
-      className="
-        relative w-full
-        min-h-[calc(100vh-64px)]
-        md:min-h-[calc(100vh-80px)]
-        flex items-center justify-center
-        text-center overflow-hidden
-      "
-    >
-      {/* BACKGROUND IMAGE */}
+    <section className="relative w-full h-screen flex items-center justify-center text-center overflow-hidden">
+
+      {/* RESPONSIVE IMAGE */}
       <picture className="absolute inset-0 w-full h-full">
-        <source
-          media="(max-width: 768px)"
-          srcSet="/home-bg-mobile.jpg"
-        />
+        <source media="(max-width: 768px)" srcSet="/home-bg-mobile.jpg" />
         <img
           src="/home-bg.jpg"
           alt="Background"

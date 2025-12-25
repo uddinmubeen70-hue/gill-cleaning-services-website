@@ -1,6 +1,6 @@
+import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import "./globals.css";
 
 export default function RootLayout({
   children,
@@ -11,7 +11,12 @@ export default function RootLayout({
     <html lang="en">
       <body className="bg-white">
         <Header />
-        {children}
+
+        {/* Header height compensation */}
+        <main className="pt-16">
+          {children}
+        </main>
+
         <Footer />
       </body>
     </html>
