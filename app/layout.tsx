@@ -10,12 +10,9 @@ export default function RootLayout({
     <html lang="en">
       <body className="bg-white">
         <Header />
-
-        {/* Header height = 64px */}
-        <main className="pt-16">
+        <main style={{ paddingTop: "64px" }}>
           {children}
         </main>
-
         <Footer />
       </body>
     </html>
