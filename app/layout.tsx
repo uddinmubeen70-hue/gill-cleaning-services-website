@@ -11,7 +11,7 @@ export default function RootLayout({
       <body className="bg-white">
         <Header />
 
-        {/* header height = 64px */}
+        {/* Header fixed hai = 64px */}
         <main className="pt-16">
           {children}
         </main>
