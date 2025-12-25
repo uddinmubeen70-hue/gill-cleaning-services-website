@@ -16,25 +16,25 @@ export default function Header() {
 
         {/* DESKTOP MENU */}
         <nav className="hidden md:flex items-center space-x-8 text-gray-700 font-medium">
-          <Link href="/" className="hover:text-blue-600 transition">Home</Link>
-          <Link href="/services" className="hover:text-blue-600 transition">Services</Link>
-          <Link href="/about" className="hover:text-blue-600 transition">About</Link>
-          <Link href="/contact" className="hover:text-blue-600 transition">Contact</Link>
+          <Link href="/" className="hover:text-blue-600">Home</Link>
+          <Link href="/services" className="hover:text-blue-600">Services</Link>
+          <Link href="/about" className="hover:text-blue-600">About</Link>
+          <Link href="/contact" className="hover:text-blue-600">Contact</Link>
         </nav>
 
         {/* DESKTOP BUTTON */}
         <Link
           href="/quote"
-          className="hidden md:block bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded transition"
+          className="hidden md:block bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded"
         >
           Get Quote
         </Link>
 
-        {/* MOBILE MENU BUTTON */}
+        {/* MOBILE BUTTON */}
         <button
-          aria-label="Toggle Menu"
-          className="md:hidden text-3xl focus:outline-none"
+          className="md:hidden text-3xl"
           onClick={() => setOpen(!open)}
+          aria-label="Toggle Menu"
         >
           {open ? "✖" : "☰"}
         </button>
@@ -42,20 +42,20 @@ export default function Header() {
 
       {/* MOBILE MENU */}
       <div
-        className={`md:hidden bg-white border-t transition-all duration-300 overflow-hidden ${
+        className={`md:hidden bg-white border-t overflow-hidden transition-all duration-300 ${
           open ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
         }`}
       >
-        <nav className="flex flex-col space-y-4 px-6 py-4 text-gray-700">
-          <Link href="/" onClick={() => setOpen(false)} className="hover:text-blue-600">Home</Link>
-          <Link href="/services" onClick={() => setOpen(false)} className="hover:text-blue-600">Services</Link>
-          <Link href="/about" onClick={() => setOpen(false)} className="hover:text-blue-600">About</Link>
-          <Link href="/contact" onClick={() => setOpen(false)} className="hover:text-blue-600">Contact</Link>
+        <nav className="flex flex-col gap-4 px-6 py-4 text-gray-700">
+          <Link href="/" onClick={() => setOpen(false)}>Home</Link>
+          <Link href="/services" onClick={() => setOpen(false)}>Services</Link>
+          <Link href="/about" onClick={() => setOpen(false)}>About</Link>
+          <Link href="/contact" onClick={() => setOpen(false)}>Contact</Link>
 
           <Link
             href="/quote"
             onClick={() => setOpen(false)}
-            className="bg-blue-600 text-white text-center px-4 py-2 rounded hover:bg-blue-700 transition"
+            className="bg-blue-600 text-white text-center py-2 rounded"
           >
             Get Quote
           </Link>

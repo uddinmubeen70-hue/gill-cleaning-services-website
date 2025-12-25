@@ -13,24 +13,24 @@ export default function Footer() {
         <div>
           <h3 className="text-xl font-bold mb-3">Quick Links</h3>
           <ul className="space-y-2 text-gray-300">
-            <li><a href="/" className="hover:text-white">Home</a></li>
-            <li><a href="/services" className="hover:text-white">Services</a></li>
-            <li><a href="/about" className="hover:text-white">About</a></li>
-            <li><a href="/contact" className="hover:text-white">Contact</a></li>
+            <li><a href="/">Home</a></li>
+            <li><a href="/services">Services</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/contact">Contact</a></li>
           </ul>
         </div>
 
         <div>
           <h3 className="text-xl font-bold mb-3">Contact</h3>
-          <p className="text-gray-300">📞 022 123 4567</p>
-          <p className="text-gray-300">📧 info@gillcleaningservices.co.nz</p>
-          <p className="text-gray-300">📍 Auckland, New Zealand</p>
+          <p>📞 022 123 4567</p>
+          <p>📧 info@gillcleaningservices.co.nz</p>
+          <p>📍 Auckland, New Zealand</p>
         </div>
 
       </div>
 
-      <div className="bg-black text-center py-4 text-gray-500 text-sm">
-        © {new Date().getFullYear()} Gill Cleaning Services. All rights reserved.
+      <div className="bg-black text-center py-4 text-gray-400 text-sm">
+        © {new Date().getFullYear()} Gill Cleaning Services
       </div>
     </footer>
   );

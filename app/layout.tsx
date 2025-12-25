@@ -1,4 +1,3 @@
-import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
@@ -11,7 +10,12 @@ export default function RootLayout({
     <html lang="en">
       <body className="bg-white">
         <Header />
-        {children}
+
+        {/* HEADER HEIGHT = h-16 (64px) */}
+        <main className="pt-16">
+          {children}
+        </main>
+
         <Footer />
       </body>
     </html>
