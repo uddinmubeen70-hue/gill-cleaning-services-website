@@ -1,18 +1,17 @@
-import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import "./globals.css";
 
-export const metadata = {
-  title: "Gill Cleaning Services | Commercial Cleaning NZ",
-  description: "Professional cleaning services across Auckland.",
-};
-
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html lang="en">
-      <body>
+      <body className="bg-white">
         <Header />
-        <div className="pt-24">{children}</div>
+        {children}
         <Footer />
       </body>
     </html>
